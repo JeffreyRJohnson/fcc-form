@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Survey</title>
+</head>
+
+<body>
+
+  <h1 id="title">Survey</h1>
+  <p id="description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aliquam, qui nemo, eaque porro
+    omnis accusamus inventore sint repudiandae natus nam dolor unde velit similique itaque distinctio, eos optio
+    numquam. </p>
+
+
+  <form action="/my-handling-form-page" method="post" id="survey-form">
+    <div>
+      <label for="name" id="name-label">Name:</label>
+      <input type="name" id="name" name="name" placeholder="email" required>
+    </div>
+    <div>
+      <label for="mail" id="email-label">E-mail:</label>
+      <input type="email" id="email" name="user_mail" placeholder="email" required>
+    </div>
+    <div>
+      <label for="number" id="number-label">Number</label>
+      <input type="number" id="number" name="number" min="10" max="100" placeholder="5" required>
+    </div>
+
+    <select name="cars" id="dropdown">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+    <br>
+    <input type="radio" name="gender" value="male" checked> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other
+
+
+    <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+    <input type="checkbox" name="vehicle2" value="Car"> I have a car
+
+
+
+    <div>
+      <label for="msg">Message:</label>
+      <textarea id="msg" name="user_message"></textarea>
+    </div>
+    <div class="button">
+      <button type="submit" id="submit">Send your message</button>
+    </div>
+
+
+  </form>
+
+</body>
+
+</html>
